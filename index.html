@@ -17,11 +17,6 @@
             text-align: center;
             padding: 40px;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-        }
         .profile-img {
             display: block;
             margin: 20px auto;
@@ -31,34 +26,35 @@
             object-fit: cover;
             border: 3px solid #ff5733;
         }
-        section {
-            margin-top: 40px;
-            padding: 20px;
+        .projet-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Hauteur de la vue pour chaque section */
+            padding: 40px;
             background-color: #1f1f1f;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(255, 87, 51, 0.3);
+            border-bottom: 2px solid #ff5733;
         }
-        h2 {
+        .projet-section h2 {
             color: #ff5733;
+            margin-bottom: 20px;
         }
-        .projet {
-            margin-bottom: 40px;
-        }
-        .projet h3 {
-            color: #ff5733;
-        }
-        .projet img {
-            width: 100%;
+        .projet-section img {
+            width: 80%;
+            max-width: 600px;
             border-radius: 8px;
-            height: 180px;
-            object-fit: cover;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .projet-section p {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
         }
         footer {
             background-color: #1f1f1f;
             text-align: center;
             padding: 20px;
-            margin-top: 40px;
             border-top: 2px solid #ff5733;
         }
         footer a {
@@ -73,60 +69,49 @@
 <body>
     <header>
         <h1>Hugo NZE MBA</h1>
-        <p>Développeur Web | Passionné par le développement et la conception d'applications </p>
+        <p>Développeur Web | Passionné par les technologies</p>
         <img src="IMG_0662.jpeg" alt="Ma photo de profil" class="profile-img">
     </header>
-    
-    <div class="container">
-        <section>
-            <h2>Présentation</h2>
-            <p>Développeur web passionné par la création d’expériences digitales modernes et performantes. Curieux et rigoureux, j’aime relever des défis techniques et proposer des solutions innovantes.</p>
-        </section>
-        
-        <section>
-            <h2>Projets Académiques</h2>
-            
-            <!-- Projet MATY TRANSPORT VOYAGEUR -->
-            <div class="projet">
-                <h3>MATY TRANSPORT VOYAGEUR</h3>
-                <img src="MATY.png" alt="Projet MATY TRANSPORT VOYAGEUR">
-                <p>
-                    <strong>Description :</strong> Conception d'une application de gestion de tickets de voyage en Visual Basic avec une base de données Access.<br>
-                    <strong>Fonctionnalités :</strong><br>
-                    - Enregistrement des passagers (Nom, Prénom, Départ, Destination).<br>
-                    - Choix entre aller simple ou aller-retour.<br>
-                    - Calcul automatique du montant en fonction du nombre de personnes.<br>
-                    <strong>Exemple :</strong><br>
-                    Départ : Libreville<br>
-                    Destination : Franceville<br>
-                    Type : Aller-retour<br>
-                    Nombre de personnes : 4<br>
-                    Montant : 120000 XAF
-                </p>
-            </div>
 
-            <!-- Projet Mise en place d’un serveur OpenLDAP -->
-            <div class="projet">
-                <h3>Mise en place d’un serveur OpenLDAP</h3>
-                <img src="Openldap.png" alt="Projet OpenLDAP">
-                <p>
-                    <strong>Description :</strong> Déploiement et configuration d’un serveur OpenLDAP sous CentOS 9 pour la gestion centralisée des utilisateurs et des groupes.<br>
-                    <strong>Compétences acquises :</strong><br>
-                    - Installation et configuration de OpenLDAP.<br>
-                    - Gestion des utilisateurs et des groupes via LDAP.<br>
-                    - Sécurisation du serveur avec TLS/SSL.<br>
-                    - Intégration avec des services d'authentification.
-                </p>
-            </div>
-        </section>
+    <!-- Projet MATY TRANSPORT VOYAGEUR -->
+    <div class="projet-section">
+        <h2>MATY TRANSPORT VOYAGEUR</h2>
+        <img src="MATY.png" alt="Projet MATY TRANSPORT VOYAGEUR">
+        <p>
+            <strong>Description :</strong> Conception d'une application de gestion de tickets de voyage en Visual Basic avec une base de données Access.<br>
+            <strong>Fonctionnalités :</strong><br>
+            - Enregistrement des passagers (Nom, Prénom, Départ, Destination).<br>
+            - Choix entre aller simple ou aller-retour.<br>
+            - Calcul automatique du montant en fonction du nombre de personnes.<br>
+            <strong>Exemple :</strong><br>
+            Départ : Libreville<br>
+            Destination : Franceville<br>
+            Type : Aller-retour<br>
+            Nombre de personnes : 4<br>
+            Montant : 120000 XAF
+        </p>
+    </div>
+
+    <!-- Projet Mise en place d’un serveur OpenLDAP -->
+    <div class="projet-section">
+        <h2>Mise en place d’un serveur OpenLDAP</h2>
+        <img src="Openldap.png" alt="Projet OpenLDAP">
+        <p>
+            <strong>Description :</strong> Déploiement et configuration d’un serveur OpenLDAP sous CentOS 9 pour la gestion centralisée des utilisateurs et des groupes.<br>
+            <strong>Compétences acquises :</strong><br>
+            - Installation et configuration de OpenLDAP.<br>
+            - Gestion des utilisateurs et des groupes via LDAP.<br>
+            - Sécurisation du serveur avec TLS/SSL.<br>
+            - Intégration avec des services d'authentification.
+        </p>
     </div>
 
     <footer>
         <h2>Contact</h2>
         <p>Avorbam, Akanda</p>
-        <p>Email: <a href="mailto:hsz243356@gmail.com">hs3743356@gmail.com</a></p>
-        <p>Téléphone:+24176214640</p>
-        <p>Portfolio: <a href="https://hugocodm.github.io/Portefolio/" target="_blank">https://hugocodm.github.io/Portfolio/</a></p>
+        <p>Email: <a href="mailto:hsz3743356@gmail.com">hsz3743356@gmail.com</a></p>
+        <p>Téléphone: +24176214640</p>
+        <p>Portfolio: <a href="https://hugocodm.github.io/Portfolio/" target="_blank">https://hugocodm.github.io/Portfolio/</a></p>
     </footer>
 </body>
 </html>
