@@ -42,23 +42,17 @@
             color: #ff5733;
         }
         .projet {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
+            margin-bottom: 40px;
         }
-        .projet-card {
-            background: #222;
-            padding: 15px;
-            border-radius: 8px;
-            width: 300px;
-            text-align: center;
+        .projet h3 {
+            color: #ff5733;
         }
-        .projet-img {
+        .projet img {
             width: 100%;
             border-radius: 8px;
             height: 180px;
             object-fit: cover;
+            margin-bottom: 15px;
         }
         footer {
             background-color: #1f1f1f;
@@ -79,7 +73,7 @@
 <body>
     <header>
         <h1>Hugo NZE MBA</h1>
-        <p>Développeur Web | Passionné par les technologies</p>
+        <p>Développeur Web | Passionné par le développement et la conception d'applications </p>
         <img src="IMG_0662.jpeg" alt="Ma photo de profil" class="profile-img">
     </header>
     
@@ -91,27 +85,38 @@
         
         <section>
             <h2>Projets Académiques</h2>
+            
+            <!-- Projet MATY TRANSPORT VOYAGEUR -->
             <div class="projet">
-                <div class="projet-card">
-                    <h3>Conception d’applications</h3>
-                    <img src="MATY.png" alt="Conception d’applications" class="projet-img">
-                    <p>Développement d'applications en Java et Python pour des projets académiques.</p>
-                </div>
-                <div class="projet-card">
-                    <h3>Mise en place d’une base de données</h3>
-                    <img src="Base de données.png" alt="Base de Données" class="projet-img">
-                    <p>Conception et gestion d'une base de données MySQL pour une application de gestion de stock.</p>
-                </div>
-                <div class="projet-card">
-                    <h3>Configuration réseau (Routage et commutation)</h3>
-                    <img src="Openldap.png" alt="Configuration réseau" class="projet-img">
-                    <p>Configuration de réseaux avec des outils de simulation comme Packet Tracer.</p>
-                </div>
-                <div class="projet-card">
-                    <h3>Configuration de serveurs sur Ubuntu et CentOS (UNUX)</h3>
-                    <img src="Gestion de projet.png" alt="Configuration de serveurs" class="projet-img">
-                    <p>Installation et configuration de serveurs sur des systèmes d'exploitation Linux.</p>
-                </div>
+                <h3>MATY TRANSPORT VOYAGEUR</h3>
+                <img src="MATY.png" alt="Projet MATY TRANSPORT VOYAGEUR">
+                <p>
+                    <strong>Description :</strong> Conception d'une application de gestion de tickets de voyage en Visual Basic avec une base de données Access.<br>
+                    <strong>Fonctionnalités :</strong><br>
+                    - Enregistrement des passagers (Nom, Prénom, Départ, Destination).<br>
+                    - Choix entre aller simple ou aller-retour.<br>
+                    - Calcul automatique du montant en fonction du nombre de personnes.<br>
+                    <strong>Exemple :</strong><br>
+                    Départ : Libreville<br>
+                    Destination : Franceville<br>
+                    Type : Aller-retour<br>
+                    Nombre de personnes : 4<br>
+                    Montant : 120000 XAF
+                </p>
+            </div>
+
+            <!-- Projet Mise en place d’un serveur OpenLDAP -->
+            <div class="projet">
+                <h3>Mise en place d’un serveur OpenLDAP</h3>
+                <img src="Openldap.png" alt="Projet OpenLDAP">
+                <p>
+                    <strong>Description :</strong> Déploiement et configuration d’un serveur OpenLDAP sous CentOS 9 pour la gestion centralisée des utilisateurs et des groupes.<br>
+                    <strong>Compétences acquises :</strong><br>
+                    - Installation et configuration de OpenLDAP.<br>
+                    - Gestion des utilisateurs et des groupes via LDAP.<br>
+                    - Sécurisation du serveur avec TLS/SSL.<br>
+                    - Intégration avec des services d'authentification.
+                </p>
             </div>
         </section>
     </div>
@@ -119,9 +124,9 @@
     <footer>
         <h2>Contact</h2>
         <p>Avorbam, Akanda</p>
-        <p>Email: <a href="mailto:hs3743356@gmail.com">hsz243356@gmail.com</a></p>
-        <p>Téléphone: +24176214640</p>
-        <p>Portfolio: <a href="https://hugocodm.github.io/Portfolio/" target="_blank">https://hugocodm.github.io/Portfolio/</a></p>
+        <p>Email: <a href="mailto:hsz243356@gmail.com">hs3743356@gmail.com</a></p>
+        <p>Téléphone:+24176214640</p>
+        <p>Portfolio: <a href="https://hugocodm.github.io/Portefolio/" target="_blank">https://hugocodm.github.io/Portfolio/</a></p>
     </footer>
 </body>
 </html>
