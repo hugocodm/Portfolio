@@ -28,12 +28,21 @@
         .formation { background-color: #90EE90; }
         .competences { background-color: #FF6347; }
         .contact { background-color: #FFD700; }
+        .profile-img {
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Hugo NZE MBA</h1>
         <p>Développeur Web | Passionné par les technologies</p>
+        <img src="images/photo.jpg" alt="Ma photo de profil" class="profile-img">
     </header>
     
     <section class="contact">
@@ -42,6 +51,11 @@
         <p>Téléphone : +241 76214640</p>
         <p>Localisation : Avorbam, Akanda</p>
         <p>Portfolio : <a href="https://hugocodm.github.io/" target="_blank">Mon site</a></p>
+    </section>
+    
+    <section class="presentation">
+        <h2>Présentation</h2>
+        <p>Développeur web passionné par la création d’expériences digitales modernes et performantes. Curieux et rigoureux, j’aime relever des défis techniques et proposer des solutions innovantes.</p>
     </section>
     
     <section class="formation">
@@ -57,7 +71,8 @@
     <section class="competences">
         <h2>Compétences</h2>
         <ul>
-            <li>Programmation : JAVA, PYTHON, HTML & CSS</li>
+            <li>Développement web : HTML, CSS, JavaScript</li>
+            <li>Programmation : JAVA, PYTHON</li>
             <li>Gestion des bases de données : MySQL, Oracle</li>
             <li>Configuration réseau : Packet Tracer, routage et commutation</li>
             <li>Administration système : Ubuntu, CentOS</li>
@@ -67,11 +82,10 @@
     
     <section class="experience">
         <h2>Expériences et Projets</h2>
-        <p>Aucune expérience professionnelle pour l’instant, mais plusieurs projets académiques :</p>
         <ul>
-            <li>Conception d'applications</li>
-            <li>Mise en place d’une base de données</li>
-            <li>Configuration de serveurs sur Ubuntu et CentOS</li>
+            <li><strong>Conception d'applications</strong> : Développement d’applications web et desktop.</li>
+            <li><strong>Mise en place d’une base de données</strong> : Gestion et optimisation de bases de données MySQL.</li>
+            <li><strong>Configuration de serveurs</strong> : Installation et gestion de serveurs sous Ubuntu et CentOS.</li>
         </ul>
     </section>
 </body>
