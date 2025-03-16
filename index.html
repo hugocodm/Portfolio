@@ -6,28 +6,22 @@
     <title>Portfolio - Hugo NZE MBA</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #121212;
+            color: white;
         }
         header {
-            background-color: #333;
-            color: white;
+            background-color: #1f1f1f;
             text-align: center;
-            padding: 20px;
+            padding: 40px;
         }
-        section {
-            padding: 20px;
-            margin: 10px auto;
+        .container {
             width: 80%;
-            border-radius: 10px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            margin: auto;
+            padding: 20px;
         }
-        .experience { background-color: #ADD8E6; }
-        .formation { background-color: #90EE90; }
-        .competences { background-color: #FF6347; }
-        .contact { background-color: #FFD700; }
         .profile-img {
             display: block;
             margin: 20px auto;
@@ -35,13 +29,36 @@
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
+            border: 3px solid #ff5733;
+        }
+        section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #1f1f1f;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(255, 87, 51, 0.3);
+        }
+        h2 {
+            color: #ff5733;
+        }
+        .projet {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .projet-card {
+            background: #222;
+            padding: 15px;
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
         }
         .projet-img {
             width: 100%;
-            max-height: 300px;
+            border-radius: 8px;
+            height: 180px;
             object-fit: cover;
-            border-radius: 10px;
-            margin-top: 10px;
         }
     </style>
 </head>
@@ -52,73 +69,37 @@
         <img src="images/photo.jpg" alt="Ma photo de profil" class="profile-img">
     </header>
     
-    <section class="contact">
-        <h2>Contact</h2>
-        <p>Email : hs3743356@gmail.com</p>
-        <p>Téléphone : +241 76214640</p>
-        <p>Localisation : Avorbam, Akanda</p>
-        <p>Portfolio : <a href="https://hugocodm.github.io/" target="_blank">Mon site</a></p>
-    </section>
-    
-    <section class="presentation">
-        <h2>Présentation</h2>
-        <p>Développeur web passionné par la création d’expériences digitales modernes et performantes. Curieux et rigoureux, j’aime relever des défis techniques et proposer des solutions innovantes.</p>
-    </section>
-    
-    <section class="formation">
-        <h2>Formation</h2>
-        <ul>
-            <li>Licence informatique - INPTIC (En cours)</li>
-            <li>Baccalauréat général (D) - LPIG (2023)</li>
-            <li>BEPC - CES Raymond Boukat (2020)</li>
-            <li>CEP - École publique de la cité Mebiame (2016)</li>
-        </ul>
-    </section>
-    
-    <section class="competences">
-        <h2>Compétences</h2>
-        <ul>
-            <li>Développement web : HTML, CSS, JavaScript</li>
-            <li>Programmation : JAVA, PYTHON</li>
-            <li>Gestion des bases de données : MySQL, Oracle</li>
-            <li>Configuration réseau : Packet Tracer, routage et commutation</li>
-            <li>Administration système : Ubuntu, CentOS</li>
-            <li>Outils : Eclipse, Visual Basic, Access, VMware Workstation</li>
-        </ul>
-    </section>
-    
-    <section class="experience">
-        <h2>Expériences et Projets</h2>
-        <div>
-            <h3>Application de Gestion de Stock</h3>
-            <p>Développement d'une application en Java (Eclipse) permettant la gestion des stocks d’un magasin.</p>
-            <ul>
-                <li>Enregistrement et mise à jour des produits</li>
-                <li>Génération de factures automatisée</li>
-                <li>Gestion des fournisseurs et des clients</li>
-            </ul>
-            <img src="images/projet1.png" alt="Application de gestion de stock" class="projet-img">
-        </div>
-        <div>
-            <h3>Site web dynamique</h3>
-            <p>Conception et développement d’un site web interactif utilisant HTML, CSS, et JavaScript.</p>
-            <img src="images/projet2.png" alt="Site web dynamique" class="projet-img">
-        </div>
-        <div>
-            <h3>Base de données MySQL</h3>
-            <p>Création et optimisation d’une base de données pour un système de gestion de bibliothèque.</p>
-            <img src="images/projet3.png" alt="Base de données MySQL" class="projet-img">
-        </div>
-        <div>
-            <h3>Application mobile en Java</h3>
-            <p>Développement d’une application Android pour la gestion de tâches.</p>
-            <img src="images/projet4.png" alt="Application mobile Java" class="projet-img">
-        </div>
-        <div>
-            <h3>Configuration réseau</h3>
-            <p>Mise en place d’un réseau avec routage et commutation sous Packet Tracer.</p>
-            <img src="images/projet5.png" alt="Configuration réseau" class="projet-img">
-        </div>
-    </section>
+    <div class="container">
+        <section>
+            <h2>Présentation</h2>
+            <p>Développeur web passionné par la création d’expériences digitales modernes et performantes.</p>
+        </section>
+        
+        <section>
+            <h2>Projets Académiques</h2>
+            <div class="projet">
+                <div class="projet-card">
+                    <h3>Gestion de Stock</h3>
+                    <img src="images/projet1.png" alt="Gestion de Stock" class="projet-img">
+                </div>
+                <div class="projet-card">
+                    <h3>Site Web Dynamique</h3>
+                    <img src="images/projet2.png" alt="Site Web Dynamique" class="projet-img">
+                </div>
+                <div class="projet-card">
+                    <h3>Base de Données MySQL</h3>
+                    <img src="images/projet3.png" alt="Base de Données" class="projet-img">
+                </div>
+                <div class="projet-card">
+                    <h3>Application Mobile Java</h3>
+                    <img src="images/projet4.png" alt="Application Mobile" class="projet-img">
+                </div>
+                <div class="projet-card">
+                    <h3>Configuration Réseau</h3>
+                    <img src="images/projet5.png" alt="Configuration Réseau" class="projet-img">
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
