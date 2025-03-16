@@ -3,139 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Hugo NZE MBA</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Portfolio - Hugo NZE MBA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        section {
+            padding: 20px;
+            margin: 10px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .experience { background-color: #ADD8E6; }
+        .formation { background-color: #90EE90; }
+        .competences { background-color: #FF6347; }
+        .contact { background-color: #FFD700; }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Hugo NZE MBA</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">À propos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Compétences</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Section À propos -->
-    <section id="about" class="py-5 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2>À propos de moi</h2>
-                    <p>
-                        Déterminé, sérieux et passionné, je conçois des expériences digitales modernes et performantes. Curieux et rigoureux, j’aime relever des défis techniques et proposer des solutions innovantes.
-                    </p>
-                    <p>
-                        <strong>Langues :</strong> Français (intermédiaire), Anglais (débutant).
-                    </p>
-                </div>
-                <div class="col-lg-6">
-                    <img src="IMG_0662.jpeg" alt="Photo de Hugo NZE MBA" class="img-fluid rounded-circle">
-                </div>
-            </div>
-        </div>
+    <header>
+        <h1>Hugo NZE MBA</h1>
+        <p>Développeur Web | Passionné par les technologies</p>
+    </header>
+    
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Email : hs3743356@gmail.com</p>
+        <p>Téléphone : +241 76214640</p>
+        <p>Localisation : Avorbam, Akanda</p>
+        <p>Portfolio : <a href="https://hugocodm.github.io/" target="_blank">Mon site</a></p>
     </section>
-
-    <!-- Section Compétences -->
-    <section id="skills" class="py-5">
-        <div class="container">
-            <h2>Compétences</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <h4>Programmation</h4>
-                    <ul>
-                        <li>JAVA</li>
-                        <li>PYTHON</li>
-                        <li>HTML & CSS</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h4>Bases de données</h4>
-                    <ul>
-                        <li>MySQL</li>
-                        <li>PostgreSQL</li>
-                        <li>Access & Oracle</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h4>Réseau & Systèmes</h4>
-                    <ul>
-                        <li>Configuration réseau (Packet Tracer)</li>
-                        <li>Ubuntu & CentOS (Linux)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    
+    <section class="formation">
+        <h2>Formation</h2>
+        <ul>
+            <li>Licence informatique - INPTIC (En cours)</li>
+            <li>Baccalauréat général (D) - LPIG (2023)</li>
+            <li>BEPC - CES Raymond Boukat (2020)</li>
+            <li>CEP - École publique de la cité Mebiame (2016)</li>
+        </ul>
     </section>
-
-    <!-- Section Projets -->
-    <section id="projects" class="py-5 bg-light">
-        <div class="container">
-            <h2>Projets Académiques</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Conception d'applications</h5>
-                            <p class="card-text">Développement d'applications en JAVA et PYTHON.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Base de données</h5>
-                            <p class="card-text">Mise en place et gestion de bases de données avec MySQL et PostgreSQL.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Configuration réseau</h5>
-                            <p class="card-text">Configuration de réseaux avec des outils comme Packet Tracer.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    
+    <section class="competences">
+        <h2>Compétences</h2>
+        <ul>
+            <li>Programmation : JAVA, PYTHON, HTML & CSS</li>
+            <li>Gestion des bases de données : MySQL, Oracle</li>
+            <li>Configuration réseau : Packet Tracer, routage et commutation</li>
+            <li>Administration système : Ubuntu, CentOS</li>
+            <li>Outils : Eclipse, Visual Basic, Access, VMware Workstation</li>
+        </ul>
     </section>
-
-    <!-- Section Contact -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Vous pouvez me contacter via :</p>
-            <ul>
-                <li>Email : <a href="mailto:hs3743356@gmail.com">hs3743356@gmail.com</a></li>
-                <li>Téléphone : +241 76214640</li>
-            </ul>
-        </div>
+    
+    <section class="experience">
+        <h2>Expériences et Projets</h2>
+        <p>Aucune expérience professionnelle pour l’instant, mais plusieurs projets académiques :</p>
+        <ul>
+            <li>Conception d'applications</li>
+            <li>Mise en place d’une base de données</li>
+            <li>Configuration de serveurs sur Ubuntu et CentOS</li>
+        </ul>
     </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2023 Hugo NZE MBA. Tous droits réservés.</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
